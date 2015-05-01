@@ -12,13 +12,13 @@ namespace Kontur.Courses.Git
 				return lastResult = TryParseDouble(args[0]);
 			if (args.Length == 2)
 			{
-				// Åñëè íå õâàòàåò ïåðâîãî àðãóìåíòà, òî èñïîëüçîâàòü lastResult
-				// Äîëæíî ðàáîòàòü òàê:
+				// Ã…Ã±Ã«Ã¨ Ã­Ã¥ ÃµÃ¢Ã Ã²Ã Ã¥Ã² Ã¯Ã¥Ã°Ã¢Ã®Ã£Ã® Ã Ã°Ã£Ã³Ã¬Ã¥Ã­Ã²Ã , Ã²Ã® Ã¨Ã±Ã¯Ã®Ã«Ã¼Ã§Ã®Ã¢Ã Ã²Ã¼ lastResult
+				// Ã„Ã®Ã«Ã¦Ã­Ã® Ã°Ã Ã¡Ã®Ã²Ã Ã²Ã¼ Ã²Ã Ãª:
 				// 2 + 2
 				//> 4
 				// + 1
 				//>5
-			    return lastResult = Execute(args[0], lastResult.Value, double.Parse(args[1]));
+			    return lastResult = Execute(args[0], lastResult.Value, TryParseDouble(args[1]));
 			}
 			if (args.Length == 3)
 			{
